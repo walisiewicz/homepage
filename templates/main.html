@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Alexei Walisiewicz</title>
+  </head>
+
+  <body>
+    <svg id="map"></svg>
+    <div id="info">
+      <span id="title">Alexei Walisiewicz</span>
+      <span id="subtitle">Software Engineer</span>
+      <span>Take a look at my 
+        <a href="https://github.com/walisiewicz">GitHub</a>, 
+        <a href="https://gitlab.com/alexei.walisiewicz.vnova">GitLab</a> and 
+        <a href="https://www.linkedin.com/in/alexei-walisiewicz-8b68a4202/">LinkedIn</a>.
+      </span>
+      <span>The map shows the origin location of failed authentication attempts to the SSH port of this domain. Check out the source <a href="https://github.com/walisiewicz/homepage">here</a>.</span>
+    </div>
+
+    <script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>

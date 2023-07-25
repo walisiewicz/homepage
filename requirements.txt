@@ -1,0 +1,5 @@
+flask==2.2.*
+uwsgi==2.0.*
+flask_uwsgi_websocket==0.6.*
+gevent==22.10.*
+requests==2.*
